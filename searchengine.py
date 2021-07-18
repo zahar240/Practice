@@ -1,4 +1,4 @@
-text = inputT()
+text = input()
 word = input()
 
 def search(x, y):
