@@ -5,6 +5,6 @@ def search(x, y):
     if word in text:
         return "Word found"
     else:
-        return "Wrod not found"
+        return "Word not found"
 
 print(search(text, word))
