@@ -1,4 +1,4 @@
-n = input()
+n = int(input())
 
 for x in range(1, n):
     if x%3 == 0 and x%5 == 0:
