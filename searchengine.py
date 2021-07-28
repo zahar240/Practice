@@ -2,7 +2,7 @@ text = input()
 word = input()
 
 def search(x, y):
-    if word in text:
+    if x in y:
         return "Word found"
     else:
         return "Word not found"
