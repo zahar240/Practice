@@ -27,3 +27,5 @@ turbulence
 
 
 # 3. Solution
+
+somestr = input()
