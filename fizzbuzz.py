@@ -12,14 +12,19 @@ def fizzbuzz_1():
             print(x)
 
 def fizzbuzz_2():
-    for x in range(1, n):
-        s = '';
-        if x % 3 == 0:
-            s += 'Fizz'
-        if x % 5 == 0:
-            s += "Buzz"
-        if s == '':
-            s = x
-    print(s, end=' ')
+    i = 1
+    while i <= n:
+        if i%2 == 1 and i%3 == 0:
+            print("Solo")
+        elif i%2 == 1 and i%5 == 0:
+            print("Learn")
+        elif i%3 == 0 and i%5 == 0:
+            print("SoloLearn")
+        elif i%2 == 1:
+            print(i)
+        i += 1
+        
 
+                
+#fizzbuzz_1()
 fizzbuzz_2()
