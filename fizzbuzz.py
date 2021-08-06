@@ -24,9 +24,20 @@ def fizzbuzz_2():
             print(i)
         i += 1
         
-
 def fizzbuzz_3():
+    slbox = []
+    for i in range(1, n):
+        if i % 2 == 1 and i % 3 == 0 and i % 5 == 0:
+            slbox.append("SoloLearn")
+        elif i % 2 == 1 and i % 3 == 0:
+            slbox.append("Solo")
+        elif i % 2 == 1 and i % 5 == 0:
+            slbox.append("Learn")
+        elif i % 2 == 1:
+            slbox.append(str(i))
+        i += 1
+    print(slbox)
 
-                
 #fizzbuzz_1()
-fizzbuzz_2()
+#fizzbuzz_2()
+fizzbuzz_3()
