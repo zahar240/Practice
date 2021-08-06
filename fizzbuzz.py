@@ -35,9 +35,19 @@ def fizzbuzz_3():
             slbox.append("Learn")
         elif i % 2 == 1:
             slbox.append(str(i))
-        i += 1
     print(slbox)
+
+def fizzbuzz_4():
+    slbox = []
+    for i in range(1, n):
+        slbox.append("SoloLearn") if i % 2 == 1 and i % 3 == 0 and i % 5 == 0 else None
+        slbox.append("Solo") if i % 2 == 1 and i % 3 == 0 else None
+        slbox.append("Learn") if i % 2 == 1 and i % 5 == 0 else None
+        slbox.append(str(i)) if i % 2 == 1 else None
+    print(slbox)
+
 
 #fizzbuzz_1()
 #fizzbuzz_2()
-fizzbuzz_3()
+#fizzbuzz_3()
+#fizzbuzz_4()
