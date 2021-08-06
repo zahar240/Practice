@@ -18,14 +18,15 @@ def letter_file():
 
 def booktitles_1():
     for i in file:
+        i = i.strip().strip(",")
         print(i[0] + str(len(i)))
 
 def booktitles_2():
     s = file.readlines()
-
-    print(s)
-
-
+    for i in s:
+        i = i.strip().strip(",")S
+        print(i[0] + str(len(i)))
+    
 
 #row_file()
 #letter_file()
