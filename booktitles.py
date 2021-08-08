@@ -24,7 +24,7 @@ def booktitles_1():
 def booktitles_2():
     s = file.readlines()
     for i in s:
-        i = i.strip().strip(",")S
+        i = i.strip().strip(",")
         print(i[0] + str(len(i)))
     
 
