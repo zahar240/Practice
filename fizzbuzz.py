@@ -57,8 +57,20 @@ def fizzbuzz_5():
             s += str(i)
         print(s)
 
+def fizzbuzz_6():
+    for x in range(1, n):
+        s = ''
+        if x % 3 == 0:
+            s += 'Fizz'
+        if x % 5 == 0:
+            s += "Buzz"
+        if s == '':
+            s = x
+        print(s)
+    
 #fizzbuzz_1()
 #fizzbuzz_2()
 #fizzbuzz_3()
 #fizzbuzz_4()
-fizzbuzz_5()
+#fizzbuzz_5()
+fizzbuzz_6()
