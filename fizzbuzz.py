@@ -58,14 +58,14 @@ def fizzbuzz_5():
         print(s)
 
 def fizzbuzz_6():
-    for x in range(1, n):
+    for i in range(1, n):
         s = ''
-        if x % 3 == 0:
+        if i % 2 == 1 and i % 3 == 0:
             s += 'Fizz'
-        if x % 5 == 0:
+        if i % 2 == 1 and i % 5 == 0:
             s += "Buzz"
-        if s == '':
-            s = x
+        if i % 2 == 1 and s == '':
+            s = i
         print(s)
     
 #fizzbuzz_1()
