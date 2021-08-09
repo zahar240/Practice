@@ -61,9 +61,9 @@ def fizzbuzz_6():
     for i in range(1, n):
         s = ''
         if i % 2 == 1 and i % 3 == 0:
-            s += 'Fizz'
+            s += 'Solo'
         if i % 2 == 1 and i % 5 == 0:
-            s += "Buzz"
+            s += "Learn"
         if i % 2 == 1 and s == '':
             s = i
         print(s)
