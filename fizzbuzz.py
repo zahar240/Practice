@@ -67,10 +67,23 @@ def fizzbuzz_6():
         if i % 2 == 1 and s == '':
             s = i
         print(s)
+
+def fizzbuzz_7():
+    for i in range(1, n):
+        s = ''
+        if i % 2 == 1:
+            if i % 3 == 0:
+                s += 'Solo'
+            if i % 5 == 0:
+                s += "Learn"
+            if s == '':
+                s = i
+        print(s)
     
 #fizzbuzz_1()
 #fizzbuzz_2()
 #fizzbuzz_3()
 #fizzbuzz_4()
 #fizzbuzz_5()
-fizzbuzz_6()
+#fizzbuzz_6()
+fizzbuzz_7()
