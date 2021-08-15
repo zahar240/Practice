@@ -5,7 +5,7 @@ def calc(list):
     if len(list) == 0:
         return 0
     else:
-        return list[0] + calc(list[1:])
+        return list[0] ** 2 + calc(list[1:])
 
 list = [1, 2, 3, 4, 5]
 x = calc(list)        
