@@ -36,3 +36,4 @@ print(duration_day)
 
 print(f"{duration_day} дн {duration_hour} час {duration_minutes} мин {duration_seconds} сек")
 """12345678 --> 142 days, 21 hours, 21 minutes and 18 seconds."""
+
