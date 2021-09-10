@@ -29,11 +29,29 @@ duration_minutes = duration % day % hour // minute
 duration_hour = duration % day // hour 
 duration_day = duration // day
 
-print(duration_seconds)
-print(duration_minutes)
-print(duration_hour)
-print(duration_day)
 
 print(f"{duration_day} дн {duration_hour} час {duration_minutes} мин {duration_seconds} сек")
 """12345678 --> 142 days, 21 hours, 21 minutes and 18 seconds."""
 
+durations_list = [12345678, 54, 4000, 2100, 100100]
+value_duration = 0
+
+for duration in durations_list:
+    if duration < minute:
+        duration_seconds = duration
+        print(f"{duration_seconds} сек")
+    elif duration < hour:
+        duration_seconds = duration % minute
+        duration_minutes = duration % day % hour // minute
+        print(f"{duration_minutes} мин {duration_seconds} сек")
+    elif duration < day:
+        duration_seconds = duration % minute
+        duration_minutes = duration % day % hour // minute
+        duration_hour = duration % day // hour
+        print(f"{duration_hour} час {duration_minutes} мин {duration_seconds} сек")
+    else:
+        duration_seconds = duration % minute
+        duration_minutes = duration % day % hour // minute
+        duration_hour = duration % day // hour 
+        duration_day = duration // day
+        print(f"{duration_day} дн {duration_hour} час {duration_minutes} мин {duration_seconds} сек")
