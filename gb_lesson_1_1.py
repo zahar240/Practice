@@ -33,11 +33,13 @@ duration_day = duration // day
 print(f"{duration_day} дн {duration_hour} час {duration_minutes} мин {duration_seconds} сек")
 """12345678 --> 142 days, 21 hours, 21 minutes and 18 seconds."""
 
-durations_list = [12345678, 54, 4000, 2100, 100100]
+durations_list = [12345678, 54, 4000, 2100, 100100, 0]
 value_duration = 0
 
 for duration in durations_list:
-    if duration < minute:
+    if duration == 0:
+        print(f"Временной отрезок равен 0")
+    elif duration < minute:
         duration_seconds = duration
         print(f"{duration_seconds} сек")
     elif duration < hour:
