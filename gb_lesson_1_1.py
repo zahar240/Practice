@@ -35,11 +35,11 @@ print(f"{duration_day} дн {duration_hour} час {duration_minutes} мин {du
 durations_list = [12345678, 54, 4000, 2100, 100100, 0]
 
 for duration in durations_list:
-        duration_seconds = duration % minute
-        duration_minutes = duration % day % hour // minute
-        duration_hour = duration % day // hour 
-        duration_day = duration // day
-        print(f"{duration_day} дн {duration_hour} час {duration_minutes} мин {duration_seconds} сек")
+    duration_seconds = duration % minute
+    duration_minutes = duration % day % hour // minute
+    duration_hour = duration % day // hour 
+    duration_day = duration // day
+    print(f"{duration_day} дн {duration_hour} час {duration_minutes} мин {duration_seconds} сек")
 
 for duration in durations_list:
     if duration == 0:
