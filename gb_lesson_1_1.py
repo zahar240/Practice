@@ -18,47 +18,44 @@ duration = 400153
 проверки работы кода сразу для нескольких значений продолжительности, будет ли тут полезен список?
 """
 
-duration = int(input("Введите целое положительное число: "))
-
 minute = 60
 hour = minute * 60
 day = hour * 24
 
-duration_seconds = duration % minute
-duration_minutes = duration % day % hour // minute
+# Пользовательский ввод
+duration = int(input("Введите целое положительное число: "))
+
+duration_second = duration % minute
+duration_minute = duration % day % hour // minute
 duration_hour = duration % day // hour 
 duration_day = duration // day
 
-print(f"{duration_day} дн {duration_hour} час {duration_minutes} мин {duration_seconds} сек")
+print(f"{duration_day} дн {duration_hour} час {duration_minute} мин {duration_second} сек")
 
-
+# Входные данные - списк
 durations_list = [12345678, 54, 4000, 2100, 100100, 0]
 
+# Вывод вариант 1
 for duration in durations_list:
-    duration_seconds = duration % minute
-    duration_minutes = duration % day % hour // minute
+    duration_second = duration % minute
+    duration_minute = duration % day % hour // minute
     duration_hour = duration % day // hour 
     duration_day = duration // day
-    print(f"{duration_day} дн {duration_hour} час {duration_minutes} мин {duration_seconds} сек")
+    print(f"{duration_day} дн {duration_hour} час {duration_minute} мин {duration_second} сек")
 
+# Вывод вариант 2
 for duration in durations_list:
+    duration_second = duration % minute
+    duration_minute = duration % day % hour // minute
+    duration_hour = duration % day // hour 
+    duration_day = duration // day
     if duration == 0:
         print(f"Временной отрезок равен 0")
     elif duration < minute:
-        duration_seconds = duration
-        print(f"{duration_seconds} сек")
+        print(f"{duration_second} сек")
     elif duration < hour:
-        duration_seconds = duration % minute
-        duration_minutes = duration % day % hour // minute
-        print(f"{duration_minutes} мин {duration_seconds} сек")
+        print(f"{duration_minute} мин {duration_second} сек")
     elif duration < day:
-        duration_seconds = duration % minute
-        duration_minutes = duration % day % hour // minute
-        duration_hour = duration % day // hour
-        print(f"{duration_hour} час {duration_minutes} мин {duration_seconds} сек")
+        print(f"{duration_hour} час {duration_minute} мин {duration_second} сек")
     else:
-        duration_seconds = duration % minute
-        duration_minutes = duration % day % hour // minute
-        duration_hour = duration % day // hour 
-        duration_day = duration // day
-        print(f"{duration_day} дн {duration_hour} час {duration_minutes} мин {duration_seconds} сек")
+        print(f"{duration_day} дн {duration_hour} час {duration_minute} мин {duration_second} сек")
