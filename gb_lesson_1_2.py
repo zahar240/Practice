@@ -9,23 +9,34 @@ c) * Решить задачу под пунктом b, не создавая н
 15392909930
 """
 
-list_cube = []
-list_cube_multiple_7 = []
-sum_number_cube_multiple_7 = 0
-
-for number in range(1, 101):
-    if number %2 == 1:
-        list_cube.append(number ** 3)
-
-for number_cube in list_cube:
-    sum_sing_number = 0
-    while number_cube > 0:
-        sum_sing_number = sum_sing_number + (number_cube %10)
-        number_cube = number_cube // 10
-    
-   
+cube = []
+cube_plus_17 = []
+sum_multiple_7 = 0
+sum_multiple_7_plus_17 = 0
 
 
-print(list_cube)
-print(list_cube_multiple_7)
-print(sum_number_cube_multiple_7)
+for number in range(1, 1001, 2):
+    cube.append(number ** 3)
+    cube_plus_17.append(number ** 3 + 17)
+
+for number in cube:
+    digit_sum = 0
+    number_7 = number
+    while number > 0:
+        digit_sum += number %10
+        number //= 10
+    if digit_sum %7 == 0:
+        sum_multiple_7 += number_7
+
+for number in cube_plus_17:
+    digit_sum = 0
+    number_7 = number
+    while number > 0:
+        digit_sum += number %10
+        number //= 10
+    if digit_sum %7 == 0:
+        sum_multiple_7_plus_17 += number_7
+
+
+print(sum_multiple_7)
+print(sum_multiple_7_plus_17)
