@@ -7,3 +7,27 @@
 Если перевод сделать невозможно, вернуть None. 
 Подумайте, как и где лучше хранить информацию, необходимую для перевода: 
 какой тип данных выбрать, в теле функции или снаружи."""
+
+english_word = input("")
+
+english_russia = {
+        "zero":"ноль",
+        "one":"один",
+        "two":"два",
+        "three":"три",
+        "four":"четыре",
+        "five":"пять",
+        "six":"шесть",
+        "seven":"семь",
+        "eight":"восемь",
+        "nine":"девять",
+        "ten":"десять"
+    }
+
+def num_translate(english, dictionary):
+    return dictionary.get(english)
+
+print(num_translate(english_word, english_russia))
+
+    
+       
