@@ -8,7 +8,7 @@
 Подумайте, как и где лучше хранить информацию, необходимую для перевода: 
 какой тип данных выбрать, в теле функции или снаружи."""
 
-english_word = input("")
+english_word = input("Enter a number in English from 0 to 10: ")
 
 english_russia = {
         "zero":"ноль",
