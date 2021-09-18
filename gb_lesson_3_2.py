@@ -5,3 +5,32 @@
 "Один"
 >>> num_translate_adv("two")
 "два" """
+
+
+def num_translate_adv(english, dictionary):
+    if english in dict(dictionary).keys():
+        result = dict(dictionary).get(english)
+        return str(result).capitalize()
+    elif str(english).lower() in dict(dictionary).keys():
+        return dict(dictionary).get(english)
+        
+          
+
+english_russia = {
+        "zero":"ноль",
+        "one":"один",
+        "two":"два",
+        "three":"три",
+        "four":"четыре",
+        "five":"пять",
+        "six":"шесть",
+        "seven":"семь",
+        "eight":"восемь",
+        "nine":"девять",
+        "ten":"десять"
+        }
+
+#english_word = input("Enter a number in English from 0 to 10: ")
+english_word = "two"
+
+print(num_translate_adv(english_word, english_russia))
