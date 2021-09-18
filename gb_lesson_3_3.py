@@ -9,3 +9,17 @@
 Подумайте: полезен ли будет вам оператор распаковки? 
 Как поступить, если потребуется сортировка по ключам? 
 Можно ли использовать словарь в этом случае?"""
+
+
+def thesaurus(*name):
+    """"""
+    persons = {}
+    for i in name:
+        if i[0] in persons:
+            persons.setdefault(i[0], i)
+        else:
+            persons.setdefault(i[0], i)
+    return persons
+
+
+print(thesaurus("Иван", "Мария", "Петр", "Илья"))
