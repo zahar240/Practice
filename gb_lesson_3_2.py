@@ -8,11 +8,11 @@
 
 
 def num_translate_adv(english, dictionary):
-    if english in dict(dictionary).keys():
-        result = dict(dictionary).get(english)
-        return str(result).capitalize()
-    elif str(english).lower() in dict(dictionary).keys():
-        return dict(dictionary).get(english)
+    if english.istitle() :
+        result = dictionary.get(english.lower())
+        return result.capitalize()
+    else:
+        return dictionary.get(english)
         
           
 
@@ -31,6 +31,6 @@ english_russia = {
         }
 
 #english_word = input("Enter a number in English from 0 to 10: ")
-english_word = "two"
+english_word = "Two"
 
 print(num_translate_adv(english_word, english_russia))
