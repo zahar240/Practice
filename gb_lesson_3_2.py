@@ -30,7 +30,6 @@ english_russia = {
         "ten":"десять"
         }
 
-#english_word = input("Enter a number in English from 0 to 10: ")
-english_word = "Two"
+english_word = input("Enter a number in English from 0 to 10: ")
 
 print(num_translate_adv(english_word, english_russia))
