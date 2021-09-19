@@ -10,9 +10,8 @@
 def num_translate_adv(english, dictionary):
     if english.istitle() :
         result = dictionary.get(english.lower())
-        return result.capitalize()
-    else:
-        return dictionary.get(english)
+        return str(result).capitalize()
+    return dictionary.get(english)
         
           
 
