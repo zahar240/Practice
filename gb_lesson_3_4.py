@@ -17,9 +17,6 @@
 Как поступить, если потребуется сортировка по ключам?"""
 
 
-from os import name
-
-
 def thesaurus_adv(*names):
     names_dict = {}
     for name in sorted(names):
@@ -34,7 +31,7 @@ def thesaurus_adv(*names):
 def thesaurus_adv_2(*names):
     s_n_sort = {}
     for s_n in names:
-        s_n.sort.setdefault(s_n.split()[1][0], {}).setdefault(s_n.split[0][0], []).append(s_n)
+        s_n_sort.setdefault(s_n.split()[1][0], {}).setdefault(s_n.split()[0][0], []).append(s_n)
     return s_n_sort
 
 
