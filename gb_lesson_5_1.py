@@ -9,3 +9,15 @@
 15
 >>> next(odd_to_15)
 ...StopIteration..."""
+
+
+def odd_to_n(num):
+    for i in range(1, num + 1):
+        yield i
+
+
+n = int(input("Введите число: "))
+
+for n in odd_to_n(n):
+    print(n)
+
