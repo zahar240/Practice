@@ -20,4 +20,4 @@ n = int(input("Введите число: "))
 
 for n in odd_to_n(n):
     print(n)
-
+print(next(odd_to_n(n)))
